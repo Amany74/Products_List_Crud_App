@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote generation</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Font for Quote text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <!-- Title -->
+    
+    
+    <!-- Inputs -->
+    <div class="container">
+            <h1>
+                Products
+            </h1>
+            <label for="productName">Product Name</label>
+        <input id="productName" oninput="validateName()" class="form-control"  type="text">
+        <label for="productPrice">Product Price</label>
+        <input id="productPrice" oninput="validatePrice()" class="form-control" type="number" >
+        <label for="productCat">Product Category</label>
+        <input id="productCat" class="form-control" type="text">
+        <label for="productDesc">Product Description</label>
+        <input id="productDesc" oninput="validateDesc()" class="form-control" type="text">
+
+        
+        <button id="addBtn" class="btn btn-primary mt-4">
+            Add product
+        </button>
+        <button id="updateBtn" class="btn btn-info mt-4 d-none">
+            Update product
+        </button>
+        
+        <!-- search -->
+        <label for="search" class="my-4 fw-bolder fs-2">Search</label>
+        <input oninput="searchByName(this.value)" id="search" class="form-control" placeholder="Search By Name"  type="text">
+
+            <!-- Products table  -->
+            <div>
+                <table  class="table mt-5 p-5">
+                    <thead>
+                        <tr>
+                        <th scope="col">Index</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Cat</th>
+                        <th scope="col">Update</th>
+                        <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cont">
+
+                    </tbody>
+                </table>
+            </div>
+
+    </div>        
+    
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

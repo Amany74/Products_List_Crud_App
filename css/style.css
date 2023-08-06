@@ -1,0 +1,27 @@
+label,input {
+    display:block;
+}
+
+body{
+    background: linear-gradient(45deg, transparent 49%, #d2d2d2 49% 51%, transparent 51%) , linear-gradient(-45deg, transparent 49%, #d2d2d2 49% 51%, transparent 51%);
+        background-size: 3em 3em;
+        background-color: #f9eeee;
+        opacity: 1;
+}
+
+.invalid {
+    border:solid 2px rgb(235, 163, 46);
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(230, 229, 229);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(230, 229, 229);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(230, 229, 229);
+  }
